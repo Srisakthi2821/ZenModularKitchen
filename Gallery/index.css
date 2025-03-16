@@ -1,0 +1,247 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    
+  font-family: "Poppins", sans-serif;
+}
+body {
+    font-size: 16px; /* Default paragraph size */
+    line-height: 1.6; /* Better readability */
+    background-color:#1E1E1F;
+    overflow-x:hidden;
+  }
+.image_brand_logo{
+    height:60px!important;
+    margin-left:10px;
+}
+
+.bg-light{
+    background-color:transparent!important;
+}
+.nav-link{
+    margin:2px 32px;
+    font-family: "Dosis", sans-serif;
+    font-size:22px;
+    font-weight:500!important;
+    letter-spacing:0.5s;
+    transition:0.5s;
+    color:white!important;
+}
+.nav-link:hover{
+    transform:translateY(5px);
+    text-shadow:0px -10px 20px rgb(58, 41, 1);
+}
+
+/*container_part1*/
+.container_projects_part_1{
+    background-image:url("../assets/Gallery/breadCrumbs_bg.jpg");
+    min-height:50vh;
+    background-position: center calc(100% - -900px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    padding:30px 150px;
+}
+.BreadCrmbs_header{
+    font-size:56px;
+    color:white;
+    font-weight:700;
+}
+.BreadCrumbs_para{
+    color:white;
+    font-size:16px;
+    font-family: "Dosis", sans-serif;
+    letter-spacing:1px;
+    font-weight:500;
+}
+.BreadCrumbs_para span{
+    transform: rotate(90deg);
+    font-size:18px;
+}
+/*gallery body*/
+.gallery_body_part{
+    padding:100px 200px;
+}
+.Heading_gallery_bodypart{
+    font-size: 42px;
+    color:white;
+}
+.Heading_gallery_bodypart span{
+    font-weight:100;
+    font-size:30px;
+    color: rgb(255, 32, 32);
+}
+/*card*/
+.gallery_body_part{
+  padding-bottom:0px;
+}
+.fa-eye{
+  font-weight:100px;
+  color:rgba(253, 253, 253, 0.9);
+}
+.card_gallery_category{
+    gap:30px;
+    display:flex;
+    align-items:center;
+    outline: 1px solid rgba(128, 128, 128, 0.179);
+    box-shadow:0px 0px 30px #97979758;
+    margin:50px 0px;
+    border-radius:10px;
+    padding:30px;
+}
+.heading_gallery_card{
+    font-size:32px;
+    font-weight:700;
+    color:rgb(214, 214, 214);
+}
+.para_gallery_card{
+    color:rgb(175, 175, 175);
+    font-size:18px;
+    line-height:35px;
+}
+.image_gallery_img_main{
+    height:400px;
+    border-radius:6px;
+}
+
+.discover_moreButton_home {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: transparent;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border:1px solid rgba(125, 125, 125, 0.212);
+    outline: none;
+    overflow: hidden;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .discover_moreButton_home:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .discover_moreButton_home:hover .icon {
+    transform: translate(8px);
+  }
+  
+  .discover_moreButton_home:hover::before {
+    animation: shine_button 1.5s ease-out infinite;
+  }
+  
+  .discover_moreButton_home::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine_button {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  /*Footer*/
+.footer {
+  background-color: #242424;
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-top:1px solid rgb(66, 66, 66);
+}
+.footer .logo-section {
+  max-width: 300px;
+}
+.footer .logo-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer .logo-section p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.footer .contact {
+  margin-top: 20px;
+}
+.footer .contact a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer .links {
+  display: flex;
+  gap: 50px;
+}
+.footer .links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .links ul li {
+  margin-bottom: 10px;
+}
+.footer .links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  background-color: #111;
+  color: #ccc;
+}
+/*modal*/
+.modal-header{
+  background-color:rgb(0, 0, 0)!important;
+}
+.modal-title{
+  font-size:22px;
+  color:white;
+  font-weight:600;
+}
+.modal-content{
+  background-color: #0d0d0d;
+}
+.kitchen_img_gal{
+  width:31%;
+  margin:6px;
+}
+.modal-body{
+  display:flex;
+  flex-wrap:wrap;
+}
+.shortImg_modal{
+  width:64%;
+}

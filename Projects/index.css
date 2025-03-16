@@ -1,0 +1,228 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    
+  font-family: "Poppins", sans-serif;
+}
+body {
+    font-size: 16px; /* Default paragraph size */
+    line-height: 1.6; /* Better readability */
+    background-color:#1E1E1F;
+    overflow-x:hidden;
+  }
+.image_brand_logo{
+    height:60px!important;
+    margin-left:10px;
+}
+
+.bg-light{
+    background-color:transparent!important;
+}
+.nav-link{
+    margin:2px 32px;
+    font-family: "Dosis", sans-serif;
+    font-size:22px;
+    font-weight:500!important;
+    letter-spacing:0.5s;
+    transition:0.5s;
+    color:white!important;
+}
+.nav-link:hover{
+    transform:translateY(5px);
+    text-shadow:0px -10px 20px rgb(58, 41, 1);
+}
+
+/*container_part1*/
+.container_projects_part_1{
+    background-image:url("../assets/Projects/part1_bg.jpg");
+    min-height:50vh;
+    background-position: center calc(100% - -300px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    padding:30px 150px;
+}
+.BreadCrmbs_header{
+    font-size:56px;
+    color:white;
+    font-weight:700;
+}
+.BreadCrumbs_para{
+    color:white;
+    font-size:16px;
+    font-family: "Dosis", sans-serif;
+    letter-spacing:1px;
+    font-weight:500;
+}
+.BreadCrumbs_para span{
+    transform: rotate(90deg);
+    font-size:18px;
+}
+/*body Part*/
+.container_bodyPart_projects{
+    padding:120px 200px;
+    display:flex;
+    gap:50px;
+    width:100vw;
+    padding-bottom:0px;
+}
+.container_writtens_project{
+    display:flex;
+    flex-direction:column;
+    width:60%;
+    gap:20px;
+}
+.project_body_headingMain{
+    color:white;
+    font-size:36px;
+    font-weight:600;
+}
+.project_body_headingMain span{
+    color:rgb(255, 10, 10);
+    font-size:25px;
+    font-weight:100;
+}
+.project_nbody_para{
+    font-size:18px;
+    color:rgb(128, 128, 128);
+    font-weight:300;
+}
+.project_nbody_para span{
+    font-size:22px;
+    color:rgb(204, 204, 204);
+    font-weight:500;
+}
+.container_project_page_images{
+    max-width:40%;
+}
+.project_page_image{
+    width:400px;
+    margin:50px 0px;
+}
+
+.discover_moreButton_home {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: transparent;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border:1px solid rgba(102, 102, 102, 0.492);
+    outline: none;
+    overflow: hidden;
+    font-size: 22px;
+    cursor: pointer;
+
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease-in-out;
+    transform:rotate(50deg);
+  }
+  
+  .discover_moreButton_home:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .discover_moreButton_home:hover .icon {
+    transform: translate(8px);
+  }
+  
+  .discover_moreButton_home:hover::before {
+    animation: shine_button 1.5s ease-out infinite;
+  }
+  
+  .discover_moreButton_home::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine_button {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+/*Footer*/
+.footer {
+    background-color: #242424;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top:1px solid rgb(66, 66, 66);
+}
+.footer .logo-section {
+    max-width: 300px;
+}
+.footer .logo-section h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer .logo-section p {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.footer .contact {
+    margin-top: 20px;
+}
+.footer .contact a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer .links {
+    display: flex;
+    gap: 50px;
+}
+.footer .links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer .links ul li {
+    margin-bottom: 10px;
+}
+.footer .links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    color: #ccc;
+}

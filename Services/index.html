@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> <!-- Specifies character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <link href="./index.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL:wght@100..400&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <!--Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <!--end google font-->
+    <!--FOnt Awesome-->
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light ">
+        <a class="navbar-brand" target="_self" href="../index.html"><img class="image_brand_logo"
+                src="../assets/Logos/Adobe Express - file.png" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav m-auto">
+                <a class="nav-link" target="_self" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" target="_self" href="../Projects/index.html">Projects</a>
+                <a class="nav-link" target="_self" href="./index.html">Services</a>
+                <a class="nav-link" target="_self" href="../Gallery/index.html">Gallery</a>
+                <a class="nav-link" target="_self" href="../Contactus/index.html">Contact</a>
+            </div>
+        </div>
+
+    </nav>
+    <div class="container_projects_part_1">
+        <h1 class="BreadCrmbs_header">Our Services</h1>
+        <p class="BreadCrumbs_para">Home &nbsp;<span>/</span>&nbsp; Services </p>
+    </div>
+    <div class="container_body_services">
+        <!-- Left Side: Accordion Buttons -->
+         <img src="../assets/pantop_view.png" class="floatingImg_services"/>
+
+        <div class="accordion" id="accordionExample">
+            <div class="card_accordian">
+                <button class="btn_acc button_normal_accordian active" type="button" onclick='updateContent(this, `
+        <div class="container_description_accordian">
+            <p class="para_desc_acc" id="descriptionText">
+                &nbsp;&nbsp;&nbsp;&nbsp;A kitchen is not just a place to cook—it’s the heart of the home, where family and friends come together. At Zen Modular Kitchen, we specialize in crafting bespoke modular kitchens that blend elegance, convenience, and durability.
+            </p>
+            <h1 class="heading_main_desc_acc">🔹 What We Offer:</h1>
+            <br/>
+            <div style="display:flex;align-items:center;gap:20px;">
+                <div class="container_texts_offers">
+                    <p class="para_desc_acc">🔸<span>Tailor-Made Modular Designs</span> – We create customized kitchen layouts that perfectly fit your space, whether you have a small apartment or a large villa.</p>
+                    <p class="para_desc_acc">🔸<span>High-Quality Materials</span> – Choose from plywood, MDF, acrylic, laminated finishes, and solid wood for cabinets and countertops.</p>
+                    <p class="para_desc_acc">🔸<span>Intelligent Storage Solutions</span> – Innovative pull-out drawers, corner units, tall cabinets, and concealed storage maximize efficiency.</p>
+                    <p class="para_desc_acc">🔸<span>Sleek & Stylish Finishes</span> – We offer a variety of matte, glossy, glass, and textured finishes to match your interior theme.</p>
+                    <p class="para_desc_acc">🔸<span>Ergonomic Workflows</span> – We ensure that the kitchen layout follows the golden triangle principle, making cooking seamless and comfortable.</p>          
+                </div>
+                <div>
+                    <img src="../assets/Services/kitchen_design_imser.jpg" class="img_desc_services"/>
+                </div>
+            </div>
+            <br/>
+            <h1 class="heading_main_desc_acc">🔹 Our Kitchen Models Include:</h1>
+            <br/>
+            <p class="para_desc_acc">🔸<span> L-Shaped Kitchens </span> – Ideal for compact spaces, ensuring better workflow.</p>
+            <p class="para_desc_acc">🔸<span> U-Shaped Kitchens </span> – Perfect for large spaces, providing extra storage and movement ease.</p>
+            <p class="para_desc_acc">🔸<span> Island Kitchens </span> – A modern and luxurious choice with extra counter space.</p>
+            <p class="para_desc_acc">🔸<span> Parallel Kitchens </span> – Space-efficient, offering two long working areas.</p>
+            <a href="../Contactus/index.html" target="_self" class="buttonLinks"><button class="getDreamKitchBUtton">Get Your Dream Kitchen <i class="fas fa-phone-alt"></i></button></a>
+        </div>
+    `)'>
+        Kitchen Design           
+        </button>
+
+            </div>
+            <div class="card_accordian">
+                <button class="btn_acc button_normal_accordian" type="button" onclick="updateContent(this, `
+        <div class='container_description_accordian'>
+            <p class='para_desc_acc'>
+                &nbsp;&nbsp;&nbsp;&nbsp;Planning a kitchen is a meticulous process that involves optimizing layout, storage, lighting, and materials for a seamless cooking experience. At Zen Modular Kitchen, we offer a comprehensive kitchen planning service to ensure your dream kitchen is efficient, stylish, and long-lasting.
+            </p>
+            <h1 class='heading_main_desc_acc'>🔹 Kitchen Planning Approach:</h1>
+            <br/>
+            <div style='display:flex;align-items:center;gap:20px;'>
+                <div class='container_texts_offers'>
+                    <p class='para_desc_acc'>🔸<span>Tailor-Made Modular Designs</span> – We analyze your kitchen space and create functional layouts that make the best use of every inch.</p>
+                    <p class='para_desc_acc'>🔸<span>High-Quality Materials</span> – Choose from durable materials like high-gloss acrylic, solid wood, and premium laminates.</p>
+                    <p class='para_desc_acc'>🔸<span>Intelligent Storage Solutions</span> – Smart storage units, pull-out trays, and organizers to maximize space efficiency.</p>
+                    <p class='para_desc_acc'>🔸<span>Sleek & Stylish Finishes</span> – A variety of matte, glossy, and textured finishes to complement your home interior.</p>
+                    <p class='para_desc_acc'>🔸<span>Ergonomic Workflows</span> – Thoughtful placement of sockets, appliances, and plumbing for seamless kitchen operations.</p>          
+                    <a href='../Contactus/index.html' target='_self' class='buttonLinks'><button class='getDreamKitchBUtton'>Get Your Dream Kitchen <i class='fas fa-phone-alt'></i></button></a>
+                </div>
+                <div>
+                    <img src='../assets/Services/sink_kitchen.jpg' class='img_desc_services'/>
+                </div>
+            </div>
+        </div>
+    `)">
+                    Kitchen Planner
+                </button>
+
+            </div>
+            <div class="card_accordian">
+                <button class='btn_acc button_normal_accordian' type='button' onclick="updateContent(this, `
+                        <div class='container_description_accordian'>
+                            <p class='para_desc_acc' id='descriptionText'>
+                                &nbsp;&nbsp;&nbsp;&nbsp;A bathroom should be a sanctuary of relaxation and comfort while remaining highly functional. At Zen Modular Kitchen, we transform ordinary bathrooms into luxurious, spa-like spaces with modern designs and high-end materials.
+                            </p>
+                            <h1 class='heading_main_desc_acc'>🔹 What We Offer:</h1>
+                            <br/>
+                            <div style='display:flex;align-items:center;gap:20px;'>
+                                <div class='container_texts_offers'>
+                                    <p class='para_desc_acc'>🔸<span>Custom Bathroom Layouts</span> – We design small, medium, and large bathrooms with tailored solutions for each space.</p>
+                                    <p class='para_desc_acc'>🔸<span>Premium Fixtures & Fittings</span> – High-quality washbasins, modern faucets, bathtubs, and shower panels that enhance elegance.</p>
+                                    <p class='para_desc_acc'>🔸<span>Waterproof & Anti-Slip Flooring</span> – Choose from ceramic tiles, vinyl, marble, or anti-skid flooring for safety and durability.</p>
+                                    <p class='para_desc_acc'>🔸<span>Space-Saving Vanities & Storage</span> – Sleek floating vanities, mirror cabinets, and hidden storage to keep essentials organized.</p>
+                                    <p class='para_desc_acc'>🔸<span>Mood Lighting & Ventilation</span> – We install LED lights, ambient lighting, and proper exhaust systems for a fresh and well-lit space.</p>          
+                                </div>
+                                <div>
+                                    <img src='../assets/Services/servicesimg_desc_bathroom.jpg' class='img_desc_services'/>
+                                </div>
+                            </div>
+                            <br/>
+                            <h1 class='heading_main_desc_acc'>🔹 Types of Bathroom Designs:</h1>
+                            <br/>
+                            <p class='para_desc_acc'>🔸<span> Contemporary Bathrooms </span> – Clean lines, neutral tones, and high-tech fittings.</p>
+                            <p class='para_desc_acc'>🔸<span> Luxury Spa-Inspired Bathrooms </span> – Bathtubs, rainfall showers, and mood lighting for ultimate relaxation.</p>
+                            <p class='para_desc_acc'>🔸<span> Minimalist Bathrooms </span> – Simple, clutter-free, and highly functional with smart storage.</p>
+                            <a href='../Contactus/index.html' target='_self' class='buttonLinks'><button class='getDreamKitchBUtton'>Upgrade Your Bathroom <i class='fas fa-phone-alt'></i></button></a>
+                        </div>
+                    `)">
+                    Bathroom Modelling
+                </button>
+
+            </div>
+            <div class="card_accordian">
+                <button class="btn_acc button_normal_accordian" type="button" onclick="updateContent(this,`
+                    <div class='container_description_accordian'>
+    <p class='para_desc_acc' id='descriptionText'>
+        &nbsp;&nbsp;&nbsp;&nbsp;Your living room is the most important space in your home—it’s where you relax, entertain guests, and create memories. At Zen Modular Kitchen, we specialize in designing elegant, cozy, and functional living spaces that reflect your personality.
+    </p>
+    <h1 class='heading_main_desc_acc'>🔹 What We Offer:</h1>
+    <br/>
+    <div style='display:flex;align-items:center;gap:20px;'>
+        <div class='container_texts_offers'>
+            <p class='para_desc_acc'>🔸<span>Custom Sofa & Seating Arrangements</span> – Tailored L-shaped, sectional, or minimalistic seating based on space and comfort.</p>
+            <p class='para_desc_acc'>🔸<span>Stylish Wall & Ceiling Designs</span> – From textured walls and accent lighting to false ceilings and wood paneling.</p>
+            <p class='para_desc_acc'>🔸<span>Entertainment Units & Storage Solutions</span> – Sleek, space-saving TV panels, shelves, and hidden storage for a clutter-free look.</p>
+            <p class='para_desc_acc'>🔸<span>Smart Lighting Setup</span> – LED lighting, chandeliers, and mood lighting for a sophisticated ambiance.</p>          
+        </div>
+        <div>
+            <img src='../assets/Services/livingroom_services_desc.jpg' class='img_desc_services'/>
+        </div>
+    </div>
+    <br/>
+    <a href='../Contactus/index.html' target='_self' class='buttonLinks'><button class='getDreamKitchBUtton'>Book Living Room Designs <i class='fas fa-phone-alt'></i></button></a>
+</div>
+                    `)">
+                    Living Room
+                </button>
+            </div>
+            <div class="card_accordian">
+                <button class="btn_acc button_normal_accordian" type="button" onclick="updateContent(this,`
+                    <div class='container_description_accordian'>
+    <p class='para_desc_acc' id='descriptionText'>
+        &nbsp;&nbsp;&nbsp;&nbsp;A bedroom is your personal sanctuary, and our designs create a perfect blend of luxury, relaxation, and functionality. We craft modern, classic, and minimalistic bedrooms with intelligent space utilization.
+    </p>
+    <h1 class='heading_main_desc_acc'>🔹 What We Offer:</h1>
+    <br/>
+    <div style='display:flex;align-items:center;gap:20px;'>
+        <div class='container_texts_offers'>
+            <p class='para_desc_acc'>🔸<span>Custom Bed & Wardrobe Designs</span> – Sliding wardrobes, walk-in closets, and space-saving beds.</p>
+            <p class='para_desc_acc'>🔸<span>Wall & Ceiling Décor</span> – Unique accent walls, paneling, and ceiling designs for a modern touch.</p>
+            <p class='para_desc_acc'>🔸<span>Soft & Ambient Lighting</span> – LED strips, bedside lamps, and dimmable lighting for a cozy atmosphere.</p>
+            <p class='para_desc_acc'>🔸<span>Work & Study Corners</span> – Integrated workspaces with ergonomic furniture.</p>          
+        </div>
+        <div>
+            <img src='../assets/Services/servicesimg_desc_bedroom.jpg' class='img_desc_services'/>
+        </div>
+    </div>
+    <br/>
+    <a href='../Contactus/index.html' target='_self' class='buttonLinks'><button class='getDreamKitchBUtton'>Discover Bedroom Designs <i class='fas fa-phone-alt'></i></button></a>
+</div>
+
+                    `)">
+                    Bedroom Interior
+                </button>
+            </div>
+            <div class="card_accordian">
+                <button class="btn_acc button_normal_accordian" type="button" onclick="updateContent(this, `
+                    <div class='container_description_accordian'>
+    <p class='para_desc_acc' id='descriptionText'>
+        &nbsp;&nbsp;&nbsp;&nbsp;Your dining area is where you enjoy meals and create special moments with loved ones. We design functional yet stylish dining spaces that complement your home's aesthetics.
+    </p>
+    <h1 class='heading_main_desc_acc'>🔹 What We Offer:</h1>
+    <br/>
+    <div style='display:flex;align-items:center;gap:20px;'>
+        <div class='container_texts_offers'>
+            <p class='para_desc_acc'>🔸<span>Custom Dining Table & Seating Arrangements</span> – Elegant wooden, marble, or glass dining tables.</p>
+            <p class='para_desc_acc'>🔸<span>Mood Lighting & Chandelier Designs</span> – Enhance the ambiance with hanging pendant lights.</p>
+            <p class='para_desc_acc'>🔸<span>Storage & Sideboard Solutions</span> – Sleek cabinets and modular storage for extra convenience.</p>
+            <p class='para_desc_acc'>🔸<span>Decorative Elements</span> – Wall art, paneling, and indoor plants to add charm.</p>          
+        </div>
+        <div>
+            <img src='../assets/Services/servicesimg_desc_dining.jpg' class='img_desc_services'/>
+        </div>
+    </div>
+    <br/>
+    <a href='../Contactus/index.html' target='_self' class='buttonLinks'><button class='getDreamKitchBUtton'>View Dining Room Ideas <i class='fas fa-phone-alt'></i></button></a>
+</div>
+                    `)">
+                    Dining Area Design
+                </button>
+            </div>
+        </div>
+
+        <!-- Right Side: Static Content Display -->
+        <div id="descriptionText">
+            <div class="container_description_accordian">
+                <p class="para_desc_acc" id="descriptionText">
+                    &nbsp;&nbsp;&nbsp;&nbsp;A kitchen is not just a place to cook—it’s the heart of the home, where family and friends come together. At Zen Modular Kitchen, we specialize in crafting bespoke modular kitchens that blend elegance, convenience, and durability.
+                </p>
+                <h1 class="heading_main_desc_acc">🔹 What We Offer:</h1>
+                <br/>
+                <div style="display:flex;align-items:center;gap:20px;">
+                    <div class="container_texts_offers">
+                        <p class="para_desc_acc">🔸<span>Tailor-Made Modular Designs</span> – We create customized kitchen layouts that perfectly fit your space, whether you have a small apartment or a large villa.</p>
+                        <p class="para_desc_acc">🔸<span>High-Quality Materials</span> – Choose from plywood, MDF, acrylic, laminated finishes, and solid wood for cabinets and countertops.</p>
+                        <p class="para_desc_acc">🔸<span>Intelligent Storage Solutions</span> – Innovative pull-out drawers, corner units, tall cabinets, and concealed storage maximize efficiency.</p>
+                        <p class="para_desc_acc">🔸<span>Sleek & Stylish Finishes</span> – We offer a variety of matte, glossy, glass, and textured finishes to match your interior theme.</p>
+                        <p class="para_desc_acc">🔸<span>Ergonomic Workflows</span> – We ensure that the kitchen layout follows the golden triangle principle, making cooking seamless and comfortable.</p>          
+                    </div>
+                    
+                        <img src="../assets/Services/kitchen_design_imser.jpg" class="img_desc_services"/>
+                 
+                </div>
+                <br/>
+                <h1 class="heading_main_desc_acc">🔹 Our Kitchen Models Include:</h1>
+                <br/>
+                <p class="para_desc_acc">🔸<span> L-Shaped Kitchens </span> – Ideal for compact spaces, ensuring better workflow.</p>
+                <p class="para_desc_acc">🔸<span> U-Shaped Kitchens </span> – Perfect for large spaces, providing extra storage and movement ease.</p>
+                <p class="para_desc_acc">🔸<span> Island Kitchens </span> – A modern and luxurious choice with extra counter space.</p>
+                <p class="para_desc_acc">🔸<span> Parallel Kitchens </span> – Space-efficient, offering two long working areas.</p>
+                <a href="../Contactus/index.html" target="_self" class="buttonLinks"><button class="getDreamKitchBUtton">Get Your Dream Kitchen <i class="fas fa-phone-alt"></i></button></a>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="logo-section">
+            <h2>
+                <img src="../assets/Logos/Adobe Express - file.png" alt="Logo" width="40"> Modular Kitchen
+            </h2>
+            <p>We made projects specially for Modular Kitchen & Interior</p>
+            <div class="contact">
+                <p>Call Us</p>
+                <a href="tel:+180034567890">+1800(345)-67890</a>
+                <p>Send a message</p>
+                <a href="mailto:info@example.com">info@example.com</a>
+            </div>
+        </div>
+        <div class="links">
+            <div>
+              <h3>Company</h3>
+              <ul>
+                  <li><a target="_self" href="../Contactus/index.html">About Us</a></li>
+                  <li><a target="_self" href="../Projects/index.html">Our Projects</a></li>
+                  <li><a target="_self" href="./index.html">Services</a></li>
+                  <li><a target="_self" href="../Gallery/index.html">Gallery</a></li>
+                  <li><a target="_self" href="../Contactus/index.html">Contact Us</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3>Services</h3>
+              <ul>
+                  <li><a target="_self" href="../Projects/index.html">Kitchen Designs</a></li>
+                  <li><a target="_self" href="../Projects/index.html">Kitchen Planner</a></li>
+                  <li><a target="_self" href="../Projects/index.html">Remodeling Kitchen</a></li>
+                  <li><a target="_self" href="../Projects/index.html">Kitchen Cabinet</a></li>
+                  <li><a target="_self" href="../Projects/index.html">Kitchen Modelling</a></li>
+                  <li><a target="_self" href="../Projects/index.html">Kitchen Installation</a></li>
+              </ul>
+          </div>
+          </div>
+    </footer>
+    <div class="footer-bottom">
+        &copy; Copyright Modular Kitchen 2024. All rights reserved.
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
