@@ -34,6 +34,11 @@ body {
     height:60px!important;
     margin-left:10px;
 }
+.heading_navbar{
+    font-size:30px;
+    font-weight:600;
+    margin-top:8px;
+}
 
 .bg-light{
     background-color:transparent!important;
@@ -52,8 +57,7 @@ body {
     text-shadow:0px -10px 20px rgb(58, 41, 1);
 }
 .navbar-nav{
-    margin-left:345px!important;
-    margin-top:-10px!important;
+    margin-top:-5px!important;
 }
 .background_video {
     position: absolute;
@@ -97,7 +101,9 @@ body {
 }
 .imageBest_coimbatore{
     height:170px;
-    left:18px;
+    left:0px;
+    
+    filter: drop-shadow(0px 0px 30px rgba(240, 198, 45, 0.566));
     top:0px;
     position: absolute;
 }
@@ -348,6 +354,7 @@ body {
     height:200px;
     top:2620px;
     left: 0px;
+    filter: drop-shadow(0px 0px 30px rgb(240, 197, 45));
 }
 .why_choose_us_container_home{
     padding:100px 170px;
@@ -637,9 +644,9 @@ body {
     color: #ccc;
 }
 
+
 @media only screen and (max-width: 660px) {
     * {
-        outline: 1px solid red;
         flex-wrap: wrap; /* Helps visualize layout issues */
     }
     body {
@@ -663,15 +670,26 @@ body {
       padding:0px;
     }
     .image_brand_logo{
-        height:100px!important;
-        margin-left:10px;
+        height:40px!important;
+        margin-left:5px;
+    }
+    .navbar-nav{
+        margin-left:0px!important;
+        margin-top:1px!important;
+    }
+    .heading_navbar{
+        font-size:18px;
+        font-weight:600;
+        margin-top:8px;
+        margin-left:-100px;
+        margin-right:-100px;
     }
     
     .bg-light{
         background-color:transparent!important;
     }
     .nav-link{
-        margin:2px 32px;
+        margin:2px 6px;
         font-family: "Dosis", sans-serif;
         font-size:16px;
         font-weight:300!important;
@@ -694,49 +712,74 @@ body {
         z-index: -1;
     }
     .subcontainer_home_modularkitchen {
+        position: absolute; /* Positioning required for exact placement */
+        bottom:-75px; /* Moves it to the bottom */
+        left: 25%;
         background: #1E1E1F;
         padding:3% 4%;
-        max-width:45%;
+        border-radius: 0%;
+        border-top-left-radius:5px;
+        max-width:100%;
         color: white;
-        position: absolute; /* Positioning required for exact placement */
-        bottom:-120px; /* Moves it to the bottom */
-        left: 0px; /* Moves it to the left */
     }
     .heading_home_subcontainer{
-        font-size:56px;
+        font-size:14px;
         letter-spacing:2px;
         font-family: "Dosis", sans-serif;
         color:#f5eee4;
+        margin:0px;
+    }
+    .imageBest_coimbatore{
+        height:62px;
+        position: absolute;
+        left:-5px;
+        top:-3px;
     }
     .paragraph_home_subcontainer{
-        font-size:19px;
+        font-size:12px;
+        font-weight:200;
         letter-spacing:1px;
-        color:#989795;
+        color:#b4b3b2;
+        margin-top:10px;
+        text-align: justify;
+        font-family: "Dosis", sans-serif;
+        text-align: justify;
        
+    }
+    .best_design_coimbatore_head{
+        font-size:21px;
+        font-weight:500;
+        letter-spacing:1px;
+        margin-left:34px;
+    }
+    .nav_button_call{
+        margin:12px;
     }
     /*Home main containe-2*/
     .home_maincontainer_2{
-        padding:0px 180px;
-        padding-top:150px;
+        padding:0px 10px;
+        padding-top:400px;
     }
     .paragraph_intro_home{
-        font-size:24px;
+        font-size:14px;
         color:#dddcda;
-        width:80%;
-        text-shadow:0px 0px 2px white;
+        width:100%;
+        text-align: justify;
+        line-height:17px;
+        text-shadow:0px 0px 50px white;
     }
     .hanginglight_container2_1{
         position:absolute;
-        height:300px;
-        right:20px;
-        filter: drop-shadow(0px 0px 50px #e3e3e1);
-        top:730px;
+        height:200px;
+        right:10px;
+        z-index:-2;
+        top:800px;
     }
     .floatingArrow_home{
         position:absolute;
         width:10%;
-        right:39%;
-        top:1000px;
+        right:20%;
+        top:950px;
         animation: arrowHomeFloating 5s ease infinite;
         transition:0.5s;
     }
@@ -751,26 +794,26 @@ body {
     }
     .home_chimneyImage{
         position:absolute;
-        max-width:20%;
-        top:1360px;
+        max-width:30%;
+        top:1250px;
         left:0px;
-        filter: drop-shadow(0px 30px 50px rgba(200, 200, 200, 0.5));
+        filter: drop-shadow(0px 30px 30px rgba(200, 200, 200, 0.5));
     }
     .container_2_homemain_subcontainer_1{
-        padding:150px;
+        padding:10px;
         display:flex;
     }
     .heading_container_2_subcontainer_home{
-        font-size:36px;
+        font-size:26px;
         color:#f5eee4;
         font-weight:600;
-        line-height:50px;
+        line-height:24px;
     }
     .para_container_2_subcontainer_home{
-        font-size:18px;
+        font-size:12px;
         color:#dddcda;
         width:90%;
-        line-height:25px;
+        line-height:18px;
         margin-top:10px;
     }
     
@@ -785,26 +828,27 @@ body {
     .discover_moreButton_home {
         position: relative;
         transition: all 0.3s ease-in-out;
-        padding-block: 0.5rem;
-        padding-inline: 1.25rem;
+        padding-block: 0.6rem;
+        padding-inline: 0.75rem;
         background-color: transparent;
         border-radius: 1px;
         display: flex;
         align-items: center;
         justify-content: center;
         color: #ffff;
-        gap: 10px;
+        gap:5px;
         font-weight: bold;
         border:none;
         outline: none;
         overflow: hidden;
-        font-size: 22px;
+        font-size: 12px;
         cursor: pointer;
+        border:1px solid rgba(128, 128, 128, 0.266);
       }
       
       .icon {
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
         transition: all 0.3s ease-in-out;
         transform:rotate(50deg);
       }
@@ -815,7 +859,7 @@ body {
       }
       
       .discover_moreButton_home:hover .icon {
-        transform: translate(8px);
+        transform: translate(5px);
       }
       
       .discover_moreButton_home:hover::before {
@@ -853,39 +897,40 @@ body {
       }
       /*container_3_home_services*/
     .whiteLight_hang_home{
-        height:300px;
+        height:100px;
         position:absolute;
-        top:2410px;
+        top:2400px;
         z-index:1;
-        right:20px;
+        right:5px;
         filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.526));
     }
       .banner{
         height:100%;
         width:100%;
-        padding:500px 50px;
+        padding:200px 0px;
         padding-bottom:200px;
         text-align:center;
         overflow:hidden;
         position:relative;
-        padding-top:300px;
+        padding-top:0px;
+        margin-top:50px;
       }
       .banner .slider{
         position:absolute;
-        width:160px;
-        height:200px;
+        width:70px;
+        height:90px;
         top:10%;
-        left:47%;
+        left:41%;
         transform: translateX(-50%);
         transform-style: preserve-3d;
-        transform:perspective(1000px);
-        animation:autorun 30s linear infinite;
+        transform:perspective(500px);
+        animation:autorun 20s linear infinite;
       }
       @keyframes autorun {
         from{
-            transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+            transform: perspective(500px) rotateX(-15deg) rotateY(0deg);
         }to{
-            transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+            transform: perspective(500px) rotateX(-15deg) rotateY(360deg);
         }
         
       }
@@ -894,7 +939,7 @@ body {
         inset: 0 0 0 0;
         transform: 
             rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) 
-            translateZ(480px);
+            translateZ(150px);
       }
     
       .banner .slider .item img{
@@ -904,13 +949,13 @@ body {
       }
     .heading_items{
         color:white;
-        font-size:20px;
+        font-size:8px;
     }
     .ourservices_heading_home{
-        font-size:100px;
+        font-size:34px;
         color:black;
         position:relative;
-        top:-280px;
+        top:-5px;
         z-index:1;
     }
     
@@ -934,50 +979,65 @@ body {
         display:flex;
         flex-direction: row;
         align-items:center;
-        gap:20px;
-        padding:40px 50px;
+        gap:5px;
+        padding:6px 1px;
         justify-content:center;
-        background-color:#252526
+        background-color:#252526;
+        padding-top:16px;
     }
     .container_item_services_benifits{
         display:flex;
+        width:30%;
         align-items:center;
-        gap:18px;
-        max-width:450px;
+        gap:5px;
     }
     .iconServices{
         color:white;
-        font-size:60px;
+        font-size:14px;
     }
     .container_item_services_benifits div h1{
         color:#c5c3c3;
+        font-size:12px;
     }
     .container_item_services_benifits div p{
         color:#868686;
+        font-size:8px;
+        margin-top:-2px;
     }
     /* Why Choose Us */
+    .greedom_img{
+        position: absolute;
+        height:130px;
+        top:1440px;
+        left: 230px;
+        filter: drop-shadow(0px 0px 30px rgb(240, 197, 45));
+    }
     .why_choose_us_container_home{
-        padding:100px 170px;
-        display:flex;
-        gap:50px;
+        gap:5px;
+        padding:20px;
     }
     .heading_wcu{
         color:#707070;
-        font-size:24px;
+        font-size:12px;
     }
+    
     .paragraph_wcu{
-        color:white;
-        font-size:50px;
+        display:none;
     }
     
     .wcu_container_home_part1{
-        max-width:50%;
+        padding-left:10px;
+        width:100%;
         display:flex;
         flex-direction:column;
-        justify-content:center;
+        justify-content:flex-end;
         align-items:left;
     }
-    .paragraph_wcu span{
+    .paragraph_wcu_smDevices{
+        font-size:24px;
+        color:white;
+    }
+    .paragraph_wcu_smDevices span{
       background: linear-gradient(to right, #707070 0, #ffffff 10%, #686868 20%);
       background-position: 0;
       -webkit-background-clip: text;
@@ -987,27 +1047,30 @@ body {
       font-weight: 600;
       white-space: nowrap;
       font-family: "Poppins", sans-serif;
-        animation: shine 20s infinite linear;
-        text-decoration:underline;
-        cursor:pointer;
-        text-decoration-thickness:2px;
-        text-decoration-color: #707070;
+      animation: shine 20s infinite linear;
+      text-decoration:none;
+      cursor:pointer;
+      text-decoration-thickness:1px;
+      text-decoration-color: #707070;
+      margin-top:6px;
+      font-size:28px;
     }
     .wcu_container_home_part2{
-        max-width:50%;
+        max-width:100%;
         display:flex;
         flex-wrap: wrap;
     }
     .itemCOntainer_wcu_home{
-        height:200px;
-        width:250px;
+        width:50%;
+        height:150px;
         display:flex;
         flex-direction: column;
         align-items:center;
         justify-content: center;
+        padding:10px;
       }
     .itemCOntainer_wcu_home h1{
-        font-size:18px;
+        font-size:14px;
         color:#d6d6d6;
         margin:10px;
     }
@@ -1024,8 +1087,11 @@ body {
     .container3_wcu_part2 h1{
         text-align:center;
     }
+    .container2_wcu_part2 h1{
+        text-align:center;
+    }
     .itemCOntainer_wcu_home i{
-        font-size:65px;
+        font-size:40px;
         color:white ;
     }
     
@@ -1078,25 +1144,39 @@ body {
         display:flex;
     }
     .bookYourAppointment_Container div{
-        width:50%;
+        width:100%;
     }
     .bookYourAppointment_Container img{
-        width:50%;
+        width:100%;
     }
     .book_yAppo_part1COntainer{
         display:flex;
         flex-direction: column;
         justify-content:center;
-        padding:30px;
+        padding:20px;
     }
     
     .bookYourAPp_heading{
-        font-size:22px;
+        font-size:15px;
+        font-weight:600;
         color:rgb(188, 188, 188);
     }
     .bookYourAPp_para{
-        font-size:18px;
+        font-size:12px;
+        text-align: justify;
         color: #707070;
+        line-height:15px;
+    }
+    .book_appnt_image_home_sm_devices{
+        display:none;
+    }
+    .paragraph_wcu{
+        color:white;
+    }
+    #para_ecu_smdev{
+        display:block!important;
+        font-size:22px;
+        font-weight:600;
     }
     .bk_appoint_butn_home{
         border:1px solid rgba(167, 167, 167, 0.185);
@@ -1108,56 +1188,69 @@ body {
         display:flex;
         flex-direction:row;
         align-items:center;
-        padding:80px 150px;
+        padding:30px 20px;
     }
     .about_out_comp_home_part1{
         min-width:35%;
     }
     .bbb_rating_about_home{
-        height:100px;
+        height:60px;
     }
     .para_about_part2{
         color:white;
-        font-size:38px;
+        text-align: justify;
+        font-size:22px;
     }
     .subpara_about_home_part2{
-        font-size:18px;
+        font-size:12px;
+        text-align: justify;
         color: #989795;
     }
     .about_comp_dir{
         display:flex;
-        gap:20px;
-        margin:20px;
+        gap:10px;
+        margin:14px;
         align-items:center;
     }
     .about_comp_dir_h1{
         color:white;
-        font-size:24px;
+        font-size:20px;
         font-weight:500;
     }
     .aboout_comp_dir_para{
         color:rgb(254, 188, 48);
-        font-size:20px;
+        font-size:18px;
+    }
+    .bbb_rating_about_home{
+        height:60px;
     }
     /*consultation*/
     .container_consultation{
-        height:80vh;
         display:flex;
-        gap:50px;
+        gap:10px;
+        padding:10px;
+        padding-bottom:50px;
+        height:64vh;
     }
+
     .consultation_image_home{
         height:100%;
+        display:none;
     }
     .p2_consultation_container_Home{
-        padding:40px 0px;
+        padding:10px 5px;
+        width:100vw;
+        padding-bottom:10px;
     }
     .para_consultation_home{
         color:#868686;
-        font-size:20px;
+        font-size:14px;
+        margin:8px;
     }
     .heading_consultatino_home{
         color:white;
-        font-size:40px;
+        font-size:26px;
+        font-weight:600;
     }
     .name_mail_form_consult_home{
         all:unset;
@@ -1166,8 +1259,8 @@ body {
         border:1px solid rgba(58, 58, 58, 0.63);
         color:black;
         border-radius:1px;
-        width:400px;
-        font-size:18px;
+        width:80%;
+        font-size:14px;
         margin:5px;
     }
     .name_mail_form_consult_home:focus{
@@ -1175,57 +1268,70 @@ body {
         
     }
     .text_area_consult_home{
-        height:200px;
-        width:855px;
+        width:80%;
+        height:70px;
     }
     .appoint_main_button{
         border:1px solid rgba(107, 107, 107, 0.54)!important;
-        margin:20px 5px;
+        margin:10px 5px;
+        font-size:14px;
     }
     
     /*Footer*/
     .footer {
         background-color: #242424;
         color: #fff;
-        padding: 40px;
+        padding: 10px;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         border-top:1px solid rgb(66, 66, 66);
     }
     .footer .logo-section {
-        max-width: 300px;
+        width: 100%;
     }
+
     .footer .logo-section h2 {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
+        font-size:20px;
     }
     .footer .logo-section p {
         margin-top: 10px;
-        line-height: 1.5;
+        font-size:12px;
     }
     .footer .contact {
-        margin-top: 20px;
+        margin:10px 10px;
+        display:flex;
+        justify-content:space-between;
     }
     .footer .contact a {
-        color: #fff;
+        color: #919191;
         text-decoration: none;
-        font-weight: bold;
+        font-weight: 300;
+        font-size:10px;
     }
     .footer .links {
         display: flex;
-        gap: 50px;
+        gap: 100px;
     }
     .footer .links ul {
         list-style: none;
         padding: 0;
+        font-size:16px;
+        color: #7a7978;
     }
     .footer .links ul li {
         margin-bottom: 10px;
+        font-size:10px;
+       
+    }
+    .links div h3{
+        font-size:16px;
     }
     .footer .links ul li a {
-        color: #fff;
+        color: #8d8d8d;
         text-decoration: none;
     }
     .footer-bottom {
